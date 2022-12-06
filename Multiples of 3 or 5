@@ -6,7 +6,7 @@ int main() {
 int x = 3;
 int sumofmultiplesof3 = 0;
 
-for (int i = 0; i <= 1000; i++) {
+for (int i = 0; i < 1000; i++) {
 
 if (i % x == 0) {
 
@@ -16,7 +16,7 @@ sumofmultiplesof3 += i;
 int y = 5;
 int sumofmultiplesof5 = 0;
 
-for (int j = 0; j <= 1000; j++) {
+for (int j = 0; j < 1000; j++) {
 
 if (j % y ==0) {
 
