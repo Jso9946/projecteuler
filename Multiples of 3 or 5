@@ -1,21 +1,32 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 int main() {
 int x = 3;
+int sumofmultiplesof3 = 0;
+
+for (int i = 0; i <= 1000; i++) {
+
+if (i % x == 0) {
+
+sumofmultiplesof3 += i;
+}
+}
 int y = 5;
-int i, j = 1;
+int sumofmultiplesof5 = 0;
 
-while ( i <= 1000 ) {
-if ( i % x == 0 ) {
-if ( j % y == 0 ) {
+for (int j = 0; j <= 1000; j++) {
 
-int sum = i + j;
+if (j % y ==0) {
 
-cout << sum << endl;}
+sumofmultiplesof5 += j;
+}
+}
 
-i++;
-j++;} }
+int sum = sumofmultiplesof3 + sumofmultiplesof5;
+cout << sum;
+
 return 0;
 }
+
