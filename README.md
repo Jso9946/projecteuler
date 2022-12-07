@@ -1,4 +1,3 @@
 # projecteuler
 
-using namespace std;
 
