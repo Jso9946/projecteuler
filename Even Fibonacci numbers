@@ -70,4 +70,8 @@ return 0;
 
 }
 
-/* The result is 4613730, but the correct answer is 4613732, I do not understand why. It seems like if I set fib1 = 0, fib2 = 1, the answer will be correct, but shouldnt it be fib1 = 1, fib2 = 2??
+/* The result is 4613730, but the correct answer is 4613732, I do not understand why.
+
+It seems like if I set fib1 = 0, fib2 = 1, the answer will be correct, 
+
+but shouldnt it be fib1 = 1, fib2 = 2?? according to the question? */
