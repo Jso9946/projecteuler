@@ -29,3 +29,45 @@ return 0;
 //first attempt is wrong.
 
 */
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int fibonacci(int n) {
+
+int fib1 = 1;
+int fib2 = 2;
+
+
+int sum = 0;
+
+for (int i = 0; i < n; i++) { 
+
+int fibcurrent = fib1 + fib2;
+fib1 = fib2;
+fib2 = fibcurrent;
+
+if (fibcurrent % 2 ==0) {
+
+sum += fibcurrent;
+
+}
+
+if (fibcurrent > 4000000) {
+break;} }
+
+return sum;}
+
+int main() {
+
+int n = 100;
+
+cout << fibonacci(100) << endl;
+
+return 0;
+
+}
+
+/* The result is 4613730, but the correct answer is 4613732, I do not understand why. It seems like if I set fib1 = 0, fib2 = 1, the answer will be correct, but shouldnt it be fib1 = 1, fib2 = 2??
