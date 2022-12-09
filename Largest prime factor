@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main () {
+/* int main () {
 int x = 600851475143;
 int primefactor = 0;
 
@@ -28,4 +28,40 @@ if (x > 2)
 
 cout << primefatcor << endl;
 
-return 0;}
+return 0;} */
+
+
+
+# include <iostream>
+# include <string>
+# include <cmath>
+
+using namespace std;
+
+int main () {
+int x = 600851475143;
+int largestprimefactor = 0;
+
+while (x % 2 == 0) {
+
+x /= 2;
+
+largestprimefactor = 2;
+}
+
+  for (int i = 3; i <= sqrt(x); i +=2){
+
+if (x % i == 0){
+x /= i;
+largestprimefactor = i;
+}
+}
+}
+if (x > 2) {
+largestprimefactor = x;
+  
+cout << largestprimefactor;
+return 0;
+}
+
+//second attempt, but what is wrong tho.
