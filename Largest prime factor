@@ -64,4 +64,4 @@ cout << largestprimefactor;
 return 0;
 }
 
-//second attempt, but what is wrong tho.
+//second attempt, why its still wrong i dont understand
