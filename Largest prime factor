@@ -65,3 +65,27 @@ return 0;
 }
 
 //second attempt, why its still wrong i dont understand
+
+# include <iostream>
+# include <string>
+# include <cmath>
+
+using namespace std;
+
+int main(){
+  long long int x = 600851475143;
+  int largest_prime_factor = 0;
+
+  for (int i = 3; i < sqrt(x); i += 2){
+    if (x % i == 0){
+         x /= i;
+    }
+  largest_prime_factor = x;
+    
+  } 
+
+  cout << largest_prime_factor;
+  return 0;
+}
+
+//correct
