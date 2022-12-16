@@ -1,0 +1,34 @@
+# include <iostream>
+# include <vector>
+# include <cmath>
+
+using namespace std;
+
+int main() {
+int i, j, k, x;
+  for (i, j = 100; i, j < 1000; i, j ++){
+    for (x = 10000; x < 1,000,000; x ++){
+      for (k = 0; k < 6; k++){
+if (i * j == x){
+  
+  vector<int> arr;
+  int x = x;
+  arr.push_back(x);
+  
+ if (x[k] == x[-k]) {
+    return x;}
+        } 
+    }
+  
+} 
+  return x;
+}
+          cout << "x";
+        }
+
+       
+return 0;
+}
+}
+
+//first attempt, wrong
