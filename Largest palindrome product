@@ -1,4 +1,4 @@
-# include <iostream>
+/* # include <iostream>
 # include <vector>
 # include <cmath>
 
@@ -29,6 +29,50 @@ if (i * j == x){
        
 return 0;
 }
-}
+}*/
 
 //first attempt, wrong
+
+#include <iostream>
+
+using namespace std;
+
+bool isPal(int num);
+int reverseNum(int num);
+
+int main()
+{
+    int product = 0;
+    int greatestPal = 0;
+    
+    for(int i = 100; i < 1000; i++){
+        for(int j = 100; j < 1000; j++){
+        
+            product = i * j;
+           
+            if(isPal(product) && greatestPal==0){
+                    greatestPal = product;
+                }
+            
+            else if(isPal(product) && greatestPal!=0){
+             
+                if(product > greatestPal){
+                    greatestPal = product;
+                    
+                    }
+                }
+            }
+        }
+        cout << greatestPal << endl;
+        return 0;
+}
+
+
+bool isPal(greatestPal){
+    if(reverseNum(greatestPal)) == greatestPal)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
